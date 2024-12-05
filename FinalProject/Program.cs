@@ -43,7 +43,7 @@ using (var scope = app.Services.CreateScope())
 
     // Ensure database is created
       context.Database.Migrate();
-
+    /*
     // Building the inital tables
     if (!context.Members.Any())
     {
@@ -59,6 +59,7 @@ using (var scope = app.Services.CreateScope())
         var newFavoriteFood1 = new FavoriteFood { Id = 1, FoodName = "Steak", MealOfDay = "Any", Calories = 400, IsVegetarian = false };
         await dao4.AddFavoriteFoodAsync(newFavoriteFood1);
     }
+    */
 }
 
 app.Run();

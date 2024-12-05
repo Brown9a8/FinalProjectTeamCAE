@@ -17,7 +17,7 @@ namespace FinalProject.Data
         public DbSet<FavoriteRide> FavoriteRides { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("ProjectDbContext");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=TeamCAE;Trusted_Connection=True;MultipleActiveResultSets=True");
         }
     }
 }
