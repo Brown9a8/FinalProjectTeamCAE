@@ -35,7 +35,7 @@ namespace FinalProject.Migrations {
                 values: new object[,] {
                     { 1, 100, "Coins", 1, "Collecting" },
                     { 2, 950, "Sports", 2, "Mountain Biking" },
-                    { 3, 500, "Activities", 2, "Hobby 3" },
+                    { 3, 500, "Sports", 3, "Volleyball" },
                     { 4, 500, "Activities", 2, "Hobby 4" },
                     { 5, 500, "Activities", 2, "Hobby 5" }
                 }
@@ -48,7 +48,7 @@ namespace FinalProject.Migrations {
                     { 1, "10/19/1986", "Information Technology", "Brock", "Brown", "Sophomore" },
                     { 2, "07/04/1996", "Information Technology", "Brady", "Jacoby", "Junior" },
                     { 3, "01/01/2000", "Major", "Morgan", "Lastname", "Grade" },
-                    { 4, "01/01/2000", "Major", "Stephanie", "Lastname", "Grade" },
+                    { 4, "02/17/1991", "Information Technology", "Stephanie", "McKinney", "Sophomore" },
                     { 5, "01/01/2000", "Major", "Wendy", "Lastname", "Grade" }
                 }
             );
