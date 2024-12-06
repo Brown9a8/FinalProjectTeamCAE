@@ -1,5 +1,4 @@
 using FinalProject.Models;
-using System.Diagnostics.Metrics;
 using Microsoft.AspNetCore.Mvc;
 using FinalProject.Interfaces;
 using FinalProject.Data;
@@ -50,14 +49,14 @@ namespace FinalProject.Controllers {
                 }
 
                 await _context.UpdateTeamMemberAsync(member);
-                return Ok(NoContent());
+                return NoContent();
             }
 
             // DELETE: TeamMembers
             [HttpDelete("{id}")]
             public async Task<IActionResult> DeleteTeamMember(int id) {
                 await _context.DeleteTeamMemberAsync(id);
-                return Ok(NoContent());
+                return NoContent();
             }
         }
     }
