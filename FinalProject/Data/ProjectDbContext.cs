@@ -15,7 +15,7 @@ namespace FinalProject.Data {
             builder.Entity<TeamMember>().HasData(
                 new TeamMember { Id = 1, FirstName = "Brock", LastName = "Brown", Birthdate = new DateTime(1986, 10, 19), CollegeProgram = "Information Technology", YearInProgram = "Sophomore" },
                 new TeamMember { Id = 2, FirstName = "Brady", LastName = "Jacoby", Birthdate = new DateTime(1996, 07, 04), CollegeProgram = "Information Technology", YearInProgram = "Junior" },
-                new TeamMember { Id = 3, FirstName = "Morgan", LastName = "Lastname", Birthdate = new DateTime(2000, 01, 01), CollegeProgram = "Major", YearInProgram = "Grade" },
+                new TeamMember { Id = 3, FirstName = "Morgan", LastName = "Montgomery", Birthdate = new DateTime(1995, 04, 18), CollegeProgram = "Major", YearInProgram = "Grade" },
                 new TeamMember { Id = 4, FirstName = "Stephanie", LastName = "McKinney", Birthdate = new DateTime(1991, 02, 17), CollegeProgram = "Information Technology", YearInProgram = "Sophomore" },
                 new TeamMember { Id = 5, FirstName = "Wendy", LastName = "Lastname", Birthdate = new DateTime(2000, 01, 01), CollegeProgram = "Major", YearInProgram = "Grade" }
             );
@@ -25,8 +25,8 @@ namespace FinalProject.Data {
                 new Hobby { Id = 1, HobbyName = "Collecting", Category = "Coins", AnnualCost = 100, DaysPerWeek = 1 },
                 new Hobby { Id = 2, HobbyName = "Mountain Biking", Category = "Sports", AnnualCost = 950, DaysPerWeek = 2 },
                 new Hobby { Id = 3, HobbyName = "Volleyball", Category = "Sports", AnnualCost = 500, DaysPerWeek = 3 },
-                new Hobby { Id = 4, HobbyName = "Hobby 4", Category = "Activities", AnnualCost = 500, DaysPerWeek = 2 },
-                new Hobby { Id = 5, HobbyName = "Hobby 5", Category = "Activities", AnnualCost = 500, DaysPerWeek = 2 }
+                new Hobby { Id = 4, HobbyName = "Knitting", Category = "Crafts", AnnualCost = 1000, DaysPerWeek = 3 },
+                new Hobby { Id = 5, HobbyName = "Board Games", Category = "Activities", AnnualCost = 500, DaysPerWeek = 2 }
             );
 
             
