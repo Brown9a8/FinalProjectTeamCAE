@@ -3,8 +3,7 @@ using FinalProject.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace FinalProject.Controllers
-{
+namespace FinalProject.Controllers {
     [ApiController]
     [Route("[controller]")]
     public class HobbyController : ControllerBase {
