@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FinalProject.Migrations
 {
     [DbContext(typeof(ProjectDbContext))]
-    [Migration("20241205012734_DbUpdate")]
+    [Migration("20241206002431_DbUpdate")]
     partial class DbUpdate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,6 +48,16 @@ namespace FinalProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("FavoriteFoods");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Calories = 400,
+                            FoodName = "Steak",
+                            IsVegetarian = false,
+                            MealOfDay = "Any"
+                        });
                 });
 
             modelBuilder.Entity("FinalProject.Models.FavoriteRide", b =>
@@ -76,6 +86,16 @@ namespace FinalProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("FavoriteRides");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Location = "CedarPoint",
+                            MinRiderHeight = 52,
+                            RideName = "Raptor",
+                            RideType = "rollercoaster"
+                        });
                 });
 
             modelBuilder.Entity("FinalProject.Models.Hobby", b =>
@@ -103,6 +123,16 @@ namespace FinalProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Hobbies");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AnnualCost = 100,
+                            Category = "Coins",
+                            DaysPerWeek = 1,
+                            HobbyName = "Collecting"
+                        });
                 });
 
             modelBuilder.Entity("FinalProject.Models.TeamMember", b =>
@@ -136,6 +166,17 @@ namespace FinalProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Members");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Birthdate = "10/19/1986",
+                            CollegeProgram = "Information Technology",
+                            FirstName = "Brock",
+                            LastName = "Brown",
+                            YearInProgram = "Sophmore"
+                        });
                 });
 #pragma warning restore 612, 618
         }
