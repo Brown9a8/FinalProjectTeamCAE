@@ -54,13 +54,14 @@ namespace FinalProject.Migrations {
             );
         }
 
-    protected override void Down(MigrationBuilder migrationBuilder) {
-        var ids = new[] { 1, 2, 3, 4, 5 };
-        foreach (var id in ids) {
-            migrationBuilder.DeleteData(table: "FavoriteFoods", keyColumn: "Id", keyValue: id);
-            migrationBuilder.DeleteData(table: "FavoriteRides", keyColumn: "Id", keyValue: id);
-            migrationBuilder.DeleteData(table: "Hobbies", keyColumn: "Id", keyValue: id);
-            migrationBuilder.DeleteData(table: "Members", keyColumn: "Id", keyValue: id);
+        protected override void Down(MigrationBuilder migrationBuilder) {
+            var ids = new[] { 1, 2, 3, 4, 5 };
+            foreach (var id in ids) {
+                migrationBuilder.DeleteData(table: "FavoriteFoods", keyColumn: "Id", keyValue: id);
+                migrationBuilder.DeleteData(table: "FavoriteRides", keyColumn: "Id", keyValue: id);
+                migrationBuilder.DeleteData(table: "Hobbies", keyColumn: "Id", keyValue: id);
+                migrationBuilder.DeleteData(table: "Members", keyColumn: "Id", keyValue: id);
+            }
         }
     }
 }
